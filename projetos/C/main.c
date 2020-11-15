@@ -22,7 +22,7 @@ typedef struct data_hora {
 
 // Funções a ser usadas
 void clear(void) { system(limp); } // limpar o terminal
-void processar(int h, int m); // processar os valores
+void esperar(int h, int m); // processar os valores
 
 // bloco principal
 int main(void){
@@ -30,12 +30,12 @@ int main(void){
   fprintf(stdout, "Hora para despertar hh:mm: ");
   fscanf(stdin, "%d:%d", &h, &m);
   fprintf(stdout, "Despertador foi ativado!\n");
-  processar(h, m);
+  esperar(h, m);
   return 0;
 }
 
 // Processar os valores colocado pelo usuario e esperar pela hora
-void processar(int h, int m) {
+void esperar(int h, int m) {
   struct data_hora dt_hr;
   struct tm *data;
   time_t tempo;
