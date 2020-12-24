@@ -1,4 +1,7 @@
-// Usando Sockets em C
+/*Usando Sockets em C para conexão TCP/IP - O source segue o padrão comum encontrado na web para facilitar pesquisas
+
+  by: zDragonSK
+*/
 #include <stdio.h>
 #include <sys/socket.h> // Necessario para o socket
 #include <netdb.h> // Necessario para o "inet_addr" no address
